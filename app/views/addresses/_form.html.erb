@@ -1,0 +1,36 @@
+<%= form_for(@address, html: {class: "elegant-aero"}) do |f| %>
+  <% if @address.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@address.errors.count, "error") %> prohibited this address from being saved:</h2>
+
+      <ul>
+      <% @address.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <h1>Addresses</h1>
+
+  <div class="field">
+    <%= f.label :street %><br>
+    <%= f.text_field :street %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= f.select :state, options_for_states(@address.state) %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_id %><br>
+    <%= collection_select :address, :contact_id, @contact_options_for_select, :id, :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Enviar", class: "button" %>
+    <%= link_to 'Back', contacts_path, class: "button" %>
+  </div>
+<% end %>
