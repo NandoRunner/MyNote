@@ -1,10 +1,15 @@
 source 'https://rubygems.org'
+ruby '2.4.10'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11.3'
+# O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
+gem 'lerolero_generator'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
 gem 'rails-i18n', '~> 4.0' # For 4.0.x
+# A library for generating fake data such as names, addresses, and phone numbers.
+gem 'faker'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', git: "https://github.com/larskanis/sqlite3-ruby", branch: "add-gemspec"
 # Use SCSS for stylesheets
