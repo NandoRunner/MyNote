@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
-ruby '2.4.10'
+# ruby '2.4.10'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.11.3'
-# O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
+gem 'rails', '4.2.5'
+# O Lero-lero Generator ï¿½ uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que nï¿½o tem conteï¿½do algum.
 gem 'lerolero_generator'
+gem 'cocoon'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
 gem 'rails-i18n', '~> 4.0' # For 4.0.x
 # A library for generating fake data such as names, addresses, and phone numbers.
