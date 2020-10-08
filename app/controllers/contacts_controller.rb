@@ -1,10 +1,11 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
+  before_action :set_options_for_select, only: [:create, :edit, :new, :update]
 
   # GET /contacts
   # GET /contacts.json
   def index
-    @contacts = Contact.all
+    @contacts = Contact.all.order(:name).page(params[:page]).per(20)
   end
 
   # GET /contacts/1
@@ -16,13 +17,10 @@ class ContactsController < ApplicationController
   def new
     @contact = Contact.new
     @contact.build_address
-    
-    options_for_select
   end
 
   # GET /contacts/1/edit
   def edit
-    options_for_select
   end
 
   # POST /contacts
@@ -67,7 +65,7 @@ class ContactsController < ApplicationController
 
   private
 
-    def options_for_select
+    def set_options_for_select
       @kind_options_for_select = Kind.all
     end
 

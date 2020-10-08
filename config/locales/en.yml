@@ -21,3 +21,5 @@
 
 en:
   wellcome: "Wellcome"
+  messages:
+    errors: "prohibited this contact from being saved"

@@ -1,4 +1,10 @@
 /* Elegant Aero */
+
+.table
+{
+	width: 100%
+}
+
 .elegant-aero {
 	margin-left:auto;
 	margin-right:auto;
@@ -39,6 +45,16 @@
 	margin-top: 10px;
 	font-weight: bold;
 }
+.elegant-aero div.field_with_errors>label {
+	float: left;
+	width: 20%;
+	text-align: right;
+	padding-right: 15px;
+	margin-top: 10px;
+	font-weight: bold;
+	color: #770000;
+}
+
 .elegant-aero input[type="text"], .elegant-aero input[type="email"], .elegant-aero textarea, .elegant-aero select {
 	color: #888;
 	width: 70%;

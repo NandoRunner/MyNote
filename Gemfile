@@ -6,6 +6,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 # O Lero-lero Generator � uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que n�o tem conte�do algum.
 gem 'lerolero_generator'
+gem 'kaminari-i18n'
+gem 'kaminari'
 gem 'cocoon'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
 gem 'rails-i18n', '~> 4.0' # For 4.0.x

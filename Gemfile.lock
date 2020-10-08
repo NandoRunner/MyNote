@@ -75,6 +75,21 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.6)
+    kaminari (1.2.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.1)
+      kaminari-activerecord (= 1.2.1)
+      kaminari-core (= 1.2.1)
+    kaminari-actionview (1.2.1)
+      actionview
+      kaminari-core (= 1.2.1)
+    kaminari-activerecord (1.2.1)
+      activerecord
+      kaminari-core (= 1.2.1)
+    kaminari-core (1.2.1)
+    kaminari-i18n (0.5.0)
+      kaminari
+      rails
     lerolero_generator (1.0.1)
     loofah (2.7.0)
       crass (~> 1.0.2)
@@ -168,6 +183,8 @@ DEPENDENCIES
   faker
   jbuilder (~> 2.0)
   jquery-rails
+  kaminari
+  kaminari-i18n
   lerolero_generator
   rails (= 4.2.5)
   rails-i18n (~> 4.0)

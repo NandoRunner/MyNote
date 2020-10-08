@@ -21,3 +21,5 @@
 
 pt-BR:
   wellcome: "Bem vindo!"
+  messages:
+    errors: "contato proibido de ser salvo"
