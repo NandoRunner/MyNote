@@ -1,11 +1,13 @@
+<div class="elegant-aero">
+
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Kinds // <%=@meu_nome%></h1>
+<h1><%= "#{t('messages.listing')} #{@kinds.model.model_name.human(count: @kinds.count)}" %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Description</th>
+      <th><%= @kinds.model.human_attribute_name("kind") %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,5 +25,9 @@
 </table>
 
 <br>
+<br>
+<div class="actions">
+  <%= link_to t('buttons.new'), new_kind_path, class: "button" %>
+</div>
 
-<%= link_to 'New Kind', new_kind_path %>
+</div>

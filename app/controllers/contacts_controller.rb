@@ -1,11 +1,11 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
-  before_action :set_options_for_select, only: [:create, :edit, :new, :update]
+  before_action :set_options_for_select, only: [:new, :edit, :update, :create]
 
   # GET /contacts
   # GET /contacts.json
   def index
-    @contacts = Contact.all.order(:name).page(params[:page]).per(20)
+    @contacts = Contact.order(:name).page(params[:page]).per(15)
   end
 
   # GET /contacts/1
@@ -64,11 +64,12 @@ class ContactsController < ApplicationController
   end
 
   private
-
+  
     def set_options_for_select
       @kind_options_for_select = Kind.all
     end
-
+  
+  
     # Use callbacks to share common setup or constraints between actions.
     def set_contact
       @contact = Contact.find(params[:id])

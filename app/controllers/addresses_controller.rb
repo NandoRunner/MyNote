@@ -4,7 +4,7 @@ class AddressesController < ApplicationController
   # GET /addresses
   # GET /addresses.json
   def index
-    @addresses = Address.all
+    @addresses = Address.order(:state, :city, :street).page(params[:page]).per(15)
   end
 
   # GET /addresses/1
@@ -15,13 +15,10 @@ class AddressesController < ApplicationController
   # GET /addresses/new
   def new
     @address = Address.new
-    @address.build_contact
-    contact_options_for_select
   end
 
   # GET /addresses/1/edit
   def edit
-    contact_options_for_select
   end
 
   # POST /addresses
@@ -65,11 +62,7 @@ class AddressesController < ApplicationController
   end
 
   private
-
-    def contact_options_for_select
-      @contact_options_for_select = Contact.all
-    end
-
+    # Use callbacks to share common setup or constraints between actions.
     def set_address
       @address = Address.find(params[:id])
     end
