@@ -39,6 +39,7 @@ GEM
     arel (6.0.4)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
+    bower-rails (0.10.0)
     builder (3.2.4)
     byebug (11.0.1)
     cocoon (1.2.15)
@@ -180,6 +181,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bower-rails (~> 0.10.0)
   byebug
   cocoon
   coffee-rails (~> 4.1.0)
