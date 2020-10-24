@@ -3,7 +3,12 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-gem 'bower-rails', '~> 0.10.0'
+# bower substituido pelo rails-assets
+# gem 'bower-rails', '~> 0.10.0'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-notifyjs'
+end
+
 # i18n for kaminari
 gem 'kaminari-i18n'
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Rails 3 and 4
