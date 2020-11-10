@@ -6,12 +6,14 @@
 
     <h3><%= l Date.today %></h3>
 
-    <ul>
-    <li><%= link_to "Addresses", addresses_path %></li>
-    <li><%= link_to "Contacts", contacts_path %></li>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-danger"><%= link_to "Addresses", addresses_path %></li>
 
-    <li><a href="http://localhost:3000/kinds">Kinds</a></li>
-    <li><a href="http://localhost:3000/phones">Phones</a></li>
+        <li class="list-group-item list-group-item-success"><%= link_to "Contacts", contacts_path %></li>
+
+        <li class="list-group-item list-group-item-info"><a href="http://localhost:3000/kinds">Kinds</a></li>
+        
+        <li class="list-group-item list-group-item-warning"><a href="http://localhost:3000/phones">Phones</a></li>
     </ul>
 
 </div>
