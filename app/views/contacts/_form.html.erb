@@ -44,8 +44,8 @@
     <%= f.text_area :rmk %>
   </div>
   <div class="field">
-    <%= f.submit "Enviar", class: "button" %>
-    <%= link_to 'Back', contacts_path, class: "button" %>
+    <%= f.submit "Enviar", class: "btn btn-primary" %>
+    <%= link_to 'Back', contacts_path, class: "btn btn-success" %>
   </div>
 
   <% if @contact.errors.any? %>
