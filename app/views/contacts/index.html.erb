@@ -1,6 +1,6 @@
 <div class="elegant-aero">
 
-x<script>$.notify("<%= notice %>", "success");</script>
+<script>$.notify("<%= notice %>", "success");</script>
 
 <h1><%= "#{t('messages.listing')} #{@contacts.model.model_name.human(count: @contacts.count)}" %></h1>
 
@@ -19,7 +19,7 @@ x<script>$.notify("<%= notice %>", "success");</script>
         <td><%= contact.name %></td>
         <td><%= contact.kind.description %></td>
         <td padding="10px"><%= link_to t('buttons.edit'), edit_contact_path(contact) %></td>
-        <td padding="10px"><%= link_to t('buttons.destroy'), contact, method: :delete, data: { confirm: t('messages.confirm') } %></td>
+        <td padding="10px"><%= link_to t('buttons.destroy'), contact,  method: :delete, data: { confirm: t('messages.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>

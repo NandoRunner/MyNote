@@ -31,3 +31,4 @@
         contact: Contato
       kind:
         kind: Tipo
+        description: Descrição

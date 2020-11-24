@@ -3,11 +3,11 @@
   <h1><%= @contact.model_name.human %></h1>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
+    <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
   <div class="field">
@@ -18,15 +18,15 @@
  
   <%= f.fields_for :address do |address_fields| %>
     <div class="field">
-      <%= address_fields.label :street %><br>
+      <%= address_fields.label :street %>
       <%= address_fields.text_field :street %>
     </div>
     <div class="field">
-      <%= address_fields.label :city %><br>
+      <%= address_fields.label :city %>
       <%= address_fields.text_field :city %>
     </div>
     <div class="field">
-      <%= address_fields.label :state %><br>
+      <%= address_fields.label :state %>
       <%= address_fields.select :state, options_for_states(@contact.address.state) %>
     </div>
   <% end %>
@@ -40,12 +40,12 @@
   </div>
 
   <div class="field">
-    <%= f.label :rmk %><br>
+    <%= f.label :rmk %>
     <%= f.text_area :rmk %>
   </div>
   <div class="field">
-    <%= f.submit "Enviar", class: "btn btn-primary" %>
-    <%= link_to 'Back', contacts_path, class: "btn btn-success" %>
+    <%= f.submit t('buttons.save'), class: "btn btn-primary" %>
+    <%= link_to  t('buttons.back'), contacts_path, class: "btn btn-success" %>
   </div>
 
   <% if @contact.errors.any? %>
