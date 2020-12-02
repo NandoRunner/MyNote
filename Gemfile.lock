@@ -73,7 +73,7 @@ GEM
     crass (1.0.6)
     erubi (1.10.0)
     execjs (2.7.0)
-    faker (2.14.0)
+    faker (2.15.1)
       i18n (>= 1.6, < 2)
     ffi (1.13.1)
     globalid (0.4.2)
@@ -103,7 +103,7 @@ GEM
       kaminari
       rails
     lerolero_generator (1.0.1)
-    loofah (2.7.0)
+    loofah (2.8.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -207,7 +207,7 @@ GEM
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.4.1)
+    zeitwerk (2.4.2)
 
 PLATFORMS
   ruby
