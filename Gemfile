@@ -72,6 +72,6 @@ end
 group :production do
   # Heroku dependencies
   gem 'pg'
-  gem 'rails_12factor'
+  # gem 'rails_12factor'
 end
 
