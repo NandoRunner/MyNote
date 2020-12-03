@@ -16,4 +16,4 @@
 //= require turbolinks
 //= require cocoon
 //= require notifyjs
-//= require_tree .
+
