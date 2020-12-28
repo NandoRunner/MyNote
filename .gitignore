@@ -15,3 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+#Rails Assets Precompile just not working on Heroku
+/public/assets
