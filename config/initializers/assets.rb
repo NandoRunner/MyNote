@@ -19,4 +19,6 @@ Rails.application.config.assets.precompile += %w( alert.js
                                                   contacts.css
                                                   home.css
                                                   kinds.css
-                                                  phones.css)
+                                                  phones.css
+                                                  application.css.erb
+                                                )
